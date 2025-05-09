@@ -70,11 +70,11 @@ export default function ReportDashboard() {
           boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
         }}
       >
-        <div style={{ padding: "16px", fontSize: "16px", fontWeight: "500" }}>
-          Select report to view or print
+        <div style={{ padding: "16px", fontSize: "16px", fontWeight: "900" , textTransform: "uppercase"}}>
+          Select report to view
         </div>
         <Menu
-          mode="inline"
+          mode="vertical"
           defaultSelectedKeys={["products"]}
           style={{ borderRight: 0 }}
         >
@@ -159,7 +159,7 @@ export default function ReportDashboard() {
                   Date Range
                 </label>
                 <RangePicker
-                  style={{ width: "100%", maxWidth: "400px"}}
+                  style={{ width: "100%", maxWidth: "400px" }}
                   ranges={{
                     Today: [dayjs(), dayjs()],
                     "This Week": [
